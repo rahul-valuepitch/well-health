@@ -1,0 +1,148 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Variables */
+:root {
+  /* Fonts */
+  --sans-serif: "Libre Franklin", sans-serif;
+  --sans-serif-alt: "Raleway", sans-serif;
+
+  /* Colors */
+  --primary: #1dab51;
+  --secondary: #e99044;
+  --dark: #0e191e;
+  --dark-alt: #383b3d;
+  --light: #ffffff;
+  --light-alt: #e7f0fd;
+}
+
+/* Default */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: var(--primary) transparent;
+  scrollbar-width: thin;
+}
+*::selection {
+  background: var(--primary);
+  color: var(--light);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans-serif);
+  background: var(--light);
+  overflow-x: hidden;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+b,
+i,
+u,
+ul,
+ol,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  line-height: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+img,
+video {
+  width: 100%;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-alt);
+  line-height: 160%;
+  letter-spacing: 0.5px;
+}
+p a {
+  color: var(--primary);
+  transition: 0.5s ease all;
+}
+p a:hover {
+  color: var(--primary);
+}
+p b {
+  font-weight: 700;
+}
+
+/* Background */
+.bg-primary {
+  background: var(--primary) !important;
+}
+.bg-secondary {
+  background: var(--secondary) !important;
+}
+.bg-light {
+  background: var(--light) !important;
+}
+.bg-light-alt {
+  background: var(--light-alt) !important;
+}
+.bg-dark {
+  background: var(--dark) !important;
+}
+.bg-dark-alt {
+  background: var(--dark-alt) !important;
+}
+
+/* Color */
+.text-primary {
+  color: var(--primary) !important;
+}
+.text-secondary {
+  color: var(--secondary) !important;
+}
+.text-light {
+  color: var(--light) !important;
+}
+.text-light-alt {
+  color: var(--light-alt) !important;
+}
+.text-dark {
+  color: var(--dark) !important;
+}
+.text-dark-alt {
+  color: var(--dark-alt) !important;
+}
+
+/* Section */
+
+/* Container */
+
+/* Button */
+
+/* Heading */
+
+/* List */
