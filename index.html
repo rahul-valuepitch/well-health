@@ -27,14 +27,198 @@
   </head>
 
   <body>
-    <img src="./static/images/logo/main.jpg" alt="" />
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./static/images/logo/main.jpg" alt="" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./coaches.html">Coaches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="social">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section hero">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="text">
+              <h1 class="mb-3">Welcome to Wellhealth Community</h1>
+              <h2 class="mb-4">
+                Your Partner in Reversing Lifestyle Diseases and Reaching
+                Optimal Weight
+              </h2>
+              <p class="mb-5">
+                Empowering individuals to reverse lifestyle diseases and achieve
+                optimal weight through tailored guidance, personalized
+                strategies, and compassionate support from a dedicated health
+                partner.
+              </p>
+              <a href="#" class="button">
+                <span>Discover More</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image">
+              <div class="owl-carousel owl-theme" id="hero-carousel">
+                <div class="item">
+                  <img src="./static/images/hero/01.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./static/images/hero/02.png" alt="" />
+                </div>
+                <div class="item">
+                  <img src="./static/images/hero/03.png" alt="" />
+                </div>
+              </div>
+              <div class="pattern"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Vision Section -->
+    <section class="section mission bg-light">
+      <img
+        src="./static/images/patterns/divider-top-alt.svg"
+        alt=""
+        class="pattern"
+      />
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="icon">
+                  <img src="./static/images/icons/wellness.png" alt="" />
+                  <img src="./static/images/icons/wellness-alt.png" alt="" />
+                </div>
+                <div class="text">
+                  <h5>Tailored Wellness Plans</h5>
+                  <p>
+                    Personalized guidance for your unique health journey and
+                    lifestyle needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-alt">
+              <div class="card-body">
+                <div class="icon">
+                  <img src="./static/images/icons/support.png" alt="" />
+                  <img src="./static/images/icons/support-alt.png" alt="" />
+                </div>
+                <div class="text">
+                  <h5>Expert Support Network</h5>
+                  <p>
+                    Access to experienced professionals for comprehensive health
+                    advice and support.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="icon">
+                  <img src="./static/images/icons/healthcare.png" alt="" />
+                  <img src="./static/images/icons/healthcare-alt.png" alt="" />
+                </div>
+                <div class="text">
+                  <h5>Customized Health Solutions</h5>
+                  <p>
+                    Individualized strategies to achieve and maintain optimal
+                    well-being and healthy weight.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./static/js/owl.carousel.min.js"></script>
     <script src="./static/js/bootstrap.bundle.min.js"></script>
     <script src="./static/js/app.js"></script>
+    <script>
+      // Hero Carousel
+      $("#hero-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        items: 1,
+      });
+
+      // Hero Animation
+      const heroAnimation = () => {
+        const animation = document.querySelector(".hero .image .pattern");
+        const animationData = {
+          container: animation,
+          render: "svg",
+          loop: true,
+          autoplay: true,
+          path: "./static/images/hero/pattern.json",
+        };
+        const anim = bodymovin.loadAnimation(animationData);
+      };
+      heroAnimation();
+    </script>
   </body>
 </html>

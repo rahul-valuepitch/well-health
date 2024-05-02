@@ -11,4 +11,4 @@ const copyright = () => {
   const year = new Date().getFullYear();
   tag.textContent = year;
 };
-copyright();
+// copyright();

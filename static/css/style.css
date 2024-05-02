@@ -1,5 +1,186 @@
 @import "./variables.css";
 
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background: var(--light);
+  box-shadow: 0 0 50px 0 #d9ffe7;
+  padding: 20px 0;
+}
+.navbar .navbar-brand {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  margin: 0;
+  background: var(--light);
+  border-radius: 0 0 10px 10px;
+}
+.navbar .navbar-nav {
+  gap: 30px;
+  align-items: center;
+}
+.navbar .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--sans-serif-alt);
+  color: var(--dark-alt);
+  text-transform: capitalize;
+  transition: 0.5s ease all;
+  position: relative;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  border-radius: 5px;
+  background: var(--primary);
+  transition: 0.5s ease all;
+}
+.navbar .nav-link.active::after,
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+.navbar .social {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.navbar .social a {
+  width: 35px;
+  height: 35px;
+  background: var(--light);
+  text-align: center;
+  line-height: 35px;
+  color: var(--primary);
+  border-radius: 50px;
+  box-shadow: 0 0 20px 0 #cad3cd;
+  transition: 0.5s ease all;
+}
+.navbar .social a:hover {
+  background: var(--primary);
+  color: var(--light);
+}
+
+/* Hero Section */
+.hero {
+  padding-top: 150px;
+  background: var(--light-alt);
+}
+.hero .image {
+  position: relative;
+}
+.hero .image #hero-carousel {
+  position: relative;
+  z-index: 1;
+}
+.hero .image .pattern {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  opacity: 0.5;
+}
+.hero .text h1 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: var(--sans-serif-alt);
+  color: var(--primary);
+  text-transform: capitalize;
+  line-height: 140%;
+}
+.hero .text h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--dark);
+  text-transform: capitalize;
+  line-height: 140%;
+}
+
+/* Mission Vision Section */
+.mission .pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.mission .card {
+  border: 0;
+  background: var(--light);
+  box-shadow: 0 0 10px 0 #f3f3f3;
+  height: 100%;
+}
+.mission .card.card-alt {
+  background: linear-gradient(to bottom, #79b990, #2c8e50);
+}
+.mission .card .card-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 30px;
+}
+.mission .card .icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.mission .card .icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+.mission .card .icon img:nth-child(1) {
+  opacity: 1;
+}
+.mission .card .icon img:nth-child(2) {
+  opacity: 0;
+}
+.mission .card.card-alt .icon img:nth-child(1) {
+  opacity: 0;
+}
+.mission .card.card-alt .icon img:nth-child(2) {
+  opacity: 1;
+}
+.mission .card .text {
+  width: calc(100% - 65px);
+}
+.mission .card .text h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+.mission .card .text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-alt);
+}
+.mission .card.card-alt .text h5 {
+  color: var(--light);
+}
+.mission .card .text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-alt);
+}
+.mission .card.card-alt .text p {
+  color: var(--light-alt);
+}
+
 /* Responsive */
 @media (max-width: 1400px) {
 }
