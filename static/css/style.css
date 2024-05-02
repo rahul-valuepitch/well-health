@@ -73,6 +73,7 @@
 /* Hero Section */
 .hero {
   padding-top: 150px;
+  padding-bottom: 50px;
   background: var(--light-alt);
 }
 .hero .image {
@@ -90,21 +91,6 @@
   width: 100%;
   opacity: 0.5;
 }
-.hero .text h1 {
-  font-size: 25px;
-  font-weight: 600;
-  font-family: var(--sans-serif-alt);
-  color: var(--primary);
-  text-transform: capitalize;
-  line-height: 140%;
-}
-.hero .text h2 {
-  font-size: 40px;
-  font-weight: 400;
-  color: var(--dark);
-  text-transform: capitalize;
-  line-height: 140%;
-}
 
 /* Mission Vision Section */
 .mission .pattern {
@@ -118,6 +104,10 @@
   background: var(--light);
   box-shadow: 0 0 10px 0 #f3f3f3;
   height: 100%;
+  transition: 0.5s ease all;
+}
+.mission .card:hover {
+  transform: translateY(-10px);
 }
 .mission .card.card-alt {
   background: linear-gradient(to bottom, #79b990, #2c8e50);
@@ -179,6 +169,59 @@
 }
 .mission .card.card-alt .text p {
   color: var(--light-alt);
+}
+
+/* About Section */
+.about .image {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Points */
+.points {
+  position: relative;
+  background: url(../images/patterns/background.png), #79b990;
+  background-repeat: repeat;
+}
+.points::after {
+  content: "";
+  background-image: radial-gradient(at top right, #709184cc, #79b990);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.points .card {
+  border: 0;
+  height: 100%;
+  position: relative;
+}
+.points .card .card-body {
+  padding: 30px;
+}
+.points .card h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+.points .card .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 60px;
+  height: 60px;
+  background: #79b990;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.points .card .icon img {
+  width: 40px;
+  height: 40px;
 }
 
 /* Responsive */

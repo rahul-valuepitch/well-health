@@ -142,8 +142,10 @@ p b {
   position: relative;
   padding: 100px 0;
 }
-
-/* Container */
+.section .container {
+  position: relative;
+  z-index: 1;
+}
 
 /* Button */
 .button {
@@ -180,5 +182,20 @@ p b {
 }
 
 /* Heading */
+.sub-heading {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: var(--sans-serif-alt);
+  color: var(--primary);
+  text-transform: capitalize;
+  line-height: 140%;
+}
+.heading {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--dark);
+  text-transform: capitalize;
+  line-height: 140%;
+}
 
 /* List */
