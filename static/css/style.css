@@ -6,7 +6,7 @@
   top: 0;
   z-index: 9;
   background: var(--light);
-  box-shadow: 0 0 50px 0 #d9ffe7;
+  box-shadow: 0px 30px 60px 0px #9696961a;
   padding: 20px 0;
 }
 .navbar .navbar-brand {
@@ -102,7 +102,7 @@
 .mission .card {
   border: 0;
   background: var(--light);
-  box-shadow: 0 0 10px 0 #f3f3f3;
+  box-shadow: var(--shadow);
   height: 100%;
   transition: 0.5s ease all;
 }
@@ -175,6 +175,37 @@
 .about .image {
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.about .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
+.about .text ul li {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: var(--light);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.about .text ul li:last-child {
+  margin-bottom: 0;
+}
+.about .text ul li b {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.about .text ul li span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  color: var(--dark-alt);
 }
 
 /* Points */
@@ -196,6 +227,7 @@
   border: 0;
   height: 100%;
   position: relative;
+  box-shadow: var(--shadow);
 }
 .points .card .card-body {
   padding: 30px;
@@ -209,19 +241,157 @@
 }
 .points .card .icon {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 60px;
-  height: 60px;
-  background: #79b990;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
 }
 .points .card .icon img {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Wellness Coach */
+.wellness-coach .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wellness-coach .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+.wellness-coach .card {
+  border: 0;
+  background: var(--light);
+  box-shadow: var(--shadow);
+  height: 100%;
+  transition: 0.5s ease all;
+}
+.wellness-coach .card:hover {
+  transform: translateY(-10px);
+}
+.wellness-coach .card.card-alt {
+  background: linear-gradient(to bottom, #79b990, #2c8e50);
+}
+.wellness-coach .card .card-body {
+  padding: 30px;
+}
+.wellness-coach .card h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.wellness-coach .card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-alt);
+}
+.wellness-coach .card.card-alt h6 {
+  color: var(--light);
+}
+.wellness-coach .card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-alt);
+}
+.wellness-coach .card.card-alt p {
+  color: var(--light-alt);
+}
+
+/* Coach Section */
+.coach .card {
+  position: relative;
+  border: 0;
+  background: transparent;
+  text-align: center;
+  height: 100%;
+}
+.coach .card .image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.coach .card .card-body {
+  margin-top: 75px;
+  padding: 100px 30px 30px 30px;
+  background: var(--light);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s ease all;
+}
+.coach .card h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 15px;
+  transition: 0.5s ease all;
+}
+.coach .card p {
+  transition: 0.5s ease all;
+}
+.coach .card .card-body:hover {
+  background: var(--primary);
+}
+.coach .card .card-body:hover h6 {
+  color: var(--light);
+}
+.coach .card .card-body:hover p {
+  color: var(--light-alt);
+}
+
+/* Services */
+.services .image {
+  width: 100%;
+  height: 55%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.services .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.services .card {
+  border: 0;
+  box-shadow: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+  background: transparent;
+  margin-bottom: 30px;
+}
+.services .card:last-child {
+  margin: 0;
+}
+.services .card .icon {
+  width: 70px;
+}
+.services .card .card-body {
+  width: calc(100% - 100px);
+  padding: 0;
+}
+.services .card h6 {
+  font-size: 23px;
+  font-weight: 600;
+  font-family: var(--sans-serif-alt);
+  color: var(--dark);
+  margin: 0 0 10px;
 }
 
 /* Responsive */
