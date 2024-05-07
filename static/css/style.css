@@ -77,7 +77,8 @@
   background: var(--light-alt);
 }
 .hero .image {
-  position: relative;
+  position: sticky;
+  top: 150px;
 }
 .hero .image #hero-carousel {
   position: relative;
@@ -91,31 +92,47 @@
   width: 100%;
   opacity: 0.5;
 }
+.hero .text ul li {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: var(--light);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.hero .text ul li:last-child {
+  margin-bottom: 0;
+}
+.hero .text ul li b {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.hero .text ul li span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  color: var(--dark-alt);
+}
 
 /* Mission Vision Section */
-.mission .pattern {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
 .mission .card {
   border: 0;
   background: var(--light);
   box-shadow: var(--shadow);
   height: 100%;
   transition: 0.5s ease all;
+  border: 2px solid var(--primary);
 }
 .mission .card:hover {
   transform: translateY(-10px);
-}
-.mission .card.card-alt {
-  background: linear-gradient(to bottom, #79b990, #2c8e50);
 }
 .mission .card .card-body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-direction: column;
   gap: 15px;
   padding: 30px;
 }
@@ -133,25 +150,14 @@
   width: 50px;
   height: 50px;
 }
-.mission .card .icon img:nth-child(1) {
-  opacity: 1;
-}
-.mission .card .icon img:nth-child(2) {
-  opacity: 0;
-}
-.mission .card.card-alt .icon img:nth-child(1) {
-  opacity: 0;
-}
-.mission .card.card-alt .icon img:nth-child(2) {
-  opacity: 1;
-}
 .mission .card .text {
-  width: calc(100% - 65px);
+  width: 100%;
 }
 .mission .card .text h5 {
   font-size: 20px;
   font-weight: 600;
   color: var(--dark);
+  line-height: 140%;
   margin-bottom: 10px;
 }
 .mission .card .text p {
@@ -159,16 +165,22 @@
   font-weight: 400;
   color: var(--dark-alt);
 }
-.mission .card.card-alt .text h5 {
-  color: var(--light);
-}
 .mission .card .text p {
   font-size: 16px;
   font-weight: 400;
   color: var(--dark-alt);
 }
-.mission .card.card-alt .text p {
-  color: var(--light-alt);
+.mission .card-btn {
+  padding: 30px;
+  background: linear-gradient(to right bottom, var(--primary), #3f805e);
+  display: block;
+  border-radius: 5px;
+}
+.mission .card-btn h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--light);
+  text-transform: capitalize;
 }
 
 /* About Section */
@@ -183,7 +195,8 @@
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  position: sticky;
+  top: 150px;
 }
 .about .image img {
   width: 100%;
@@ -218,12 +231,12 @@
 /* Points */
 .points {
   position: relative;
-  background: url(../images/patterns/background.png), #79b990;
+  background: url(../images/patterns/background.png), var(--primary);
   background-repeat: repeat;
 }
 .points::after {
   content: "";
-  background-image: radial-gradient(at top right, #709184cc, #79b990);
+  background-image: radial-gradient(at top right, #3f805e80, var(--primary));
   position: absolute;
   top: 0;
   left: 0;
@@ -298,7 +311,7 @@
   transform: translateY(-10px);
 }
 .wellness-coach .card.card-alt {
-  background: linear-gradient(to bottom, #79b990, #2c8e50);
+  background: linear-gradient(to right bottom, var(--primary), #3f805e);
 }
 .wellness-coach .card .card-body {
   padding: 30px;
@@ -456,13 +469,13 @@
 .programs .grid .item:nth-child(3),
 .programs .grid .item:nth-child(6),
 .programs .grid .item:nth-child(8) {
-  background: #6da481;
+  background: var(--primary);
 }
 .programs .grid .item:nth-child(2),
 .programs .grid .item:nth-child(4),
 .programs .grid .item:nth-child(5),
 .programs .grid .item:nth-child(7) {
-  background: #567f65;
+  background: #284e61;
 }
 .programs .grid .item h6 {
   font-size: 18px;
@@ -473,7 +486,7 @@
 }
 .programs .grid .item:hover {
   transform: translateY(-10px);
-  background: var(--primary);
+  background: #3f805e;
 }
 
 /* Footer */
