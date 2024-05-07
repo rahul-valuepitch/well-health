@@ -393,6 +393,27 @@
 .coach .card .card-body:hover p {
   color: var(--light-alt);
 }
+.coach .owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px !important;
+}
+.coach .owl-nav button {
+  margin: 0 !important;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  background: var(--primary) !important;
+  color: var(--light) !important;
+  border: 0 !important;
+  transition: 0.5s ease all;
+}
+.coach .owl-nav button:hover {
+  background: var(--light) !important;
+  color: var(--primary) !important;
+}
 
 /* Services */
 .services .pattern {
@@ -449,6 +470,10 @@
   font-family: var(--sans-serif-alt);
   color: var(--dark);
   margin: 0 0 10px;
+}
+.services .text {
+  position: sticky;
+  top: 150px;
 }
 
 /* Programs */
@@ -583,8 +608,8 @@
   display: inline-block;
 }
 .footer .social a:hover {
-  background: var(--primary);
-  color: var(--light);
+  background: var(--light);
+  color: var(--primary);
 }
 
 /* Responsive */
