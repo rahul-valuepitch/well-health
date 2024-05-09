@@ -268,9 +268,13 @@
   justify-content: center;
   background: var(--light);
   transition: 0.5s ease all;
+  outline: 10px solid var(--light);
+  border: 2px dashed var(--primary);
 }
-.points .card:hover {
+.points .card.active {
   background: var(--primary);
+  outline: 10px solid var(--primary);
+  border: 2px dashed var(--light);
 }
 .points .card .card-body {
   padding: 0 30px 30px;
@@ -289,10 +293,10 @@
 .points .card p {
   transition: 0.5s ease all;
 }
-.points .card:hover h6 {
+.points .card.active h6 {
   color: var(--light);
 }
-.points .card:hover p {
+.points .card.active p {
   color: var(--light);
 }
 .points .card .icon {
@@ -300,13 +304,21 @@
   height: 70px;
   margin: 0 auto 20px;
   border-radius: 50px;
-  background: var(--light);
+  background: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.points .card.active .icon {
+  background: var(--light);
+}
 .points .card .icon img {
   width: 50px;
+  filter: brightness(0) invert(1);
+}
+.points .card.active .icon img {
+  width: 50px;
+  filter: none;
 }
 
 /* Wellness Coach */
