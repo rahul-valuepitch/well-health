@@ -549,8 +549,138 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="section testimonial">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-4">
+            <h4
+              class="sub-heading text-light mb-2"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
+              Rave Client Testimonials Here
+            </h4>
+            <h3
+              class="heading text-light mb-5"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Client Testimonials and Reviews
+            </h3>
+            <div
+              id="testimonial-carousel-nav"
+              class="owl-nav"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            ></div>
+          </div>
+          <div class="col-lg-8">
+            <div class="owl-carousel owl-theme" id="testimonial-carousel">
+              <div class="item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="info">
+                      <div class="image">
+                        <img
+                          src="./static/images/testimonials/dummy.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="profile">
+                        <h5>John Doe</h5>
+                        <h6>Graphic Designer</h6>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Alias, illo veniam ipsa accusamus modi, ipsum porro
+                      eveniet nihil obcaecati, sint dignissimos qui repellat
+                      dolorem quo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="info">
+                      <div class="image">
+                        <img
+                          src="./static/images/testimonials/dummy.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="profile">
+                        <h5>Jane Doe</h5>
+                        <h6>Graphic Designer</h6>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Alias, illo veniam ipsa accusamus modi, ipsum porro
+                      eveniet nihil obcaecati, sint dignissimos qui repellat
+                      dolorem quo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="info">
+                      <div class="image">
+                        <img
+                          src="./static/images/testimonials/dummy.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="profile">
+                        <h5>Jacob Doe</h5>
+                        <h6>Graphic Designer</h6>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Alias, illo veniam ipsa accusamus modi, ipsum porro
+                      eveniet nihil obcaecati, sint dignissimos qui repellat
+                      dolorem quo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="info">
+                      <div class="image">
+                        <img
+                          src="./static/images/testimonials/dummy.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="profile">
+                        <h5>Jason Doe</h5>
+                        <h6>Graphic Designer</h6>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Alias, illo veniam ipsa accusamus modi, ipsum porro
+                      eveniet nihil obcaecati, sint dignissimos qui repellat
+                      dolorem quo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services -->
-    <section class="section services pt-4">
+    <section class="section services">
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6">
@@ -982,6 +1112,33 @@
           },
           1000: {
             items: 4,
+          },
+        },
+      });
+
+      // Testimonial Carousel
+      $("#testimonial-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        navContainer: "#testimonial-carousel-nav",
+        navText: [
+          "<i class='fal fa-chevron-left'></i>",
+          "<i class='fal fa-chevron-right'></i>",
+        ],
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 2,
           },
         },
       });
