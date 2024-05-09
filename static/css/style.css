@@ -243,14 +243,40 @@
   width: 100%;
   height: 100%;
 }
+.points .items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: auto;
+}
+.points .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
 .points .card {
   border: 0;
-  height: 100%;
   position: relative;
   box-shadow: var(--shadow);
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: var(--light);
+  transition: 0.5s ease all;
+}
+.points .card:hover {
+  background: var(--primary);
 }
 .points .card .card-body {
-  padding: 30px;
+  padding: 0 30px 30px;
+  height: auto;
+  width: 100%;
+  flex: initial;
 }
 .points .card h6 {
   font-size: 20px;
@@ -258,17 +284,29 @@
   color: var(--dark);
   line-height: 140%;
   margin-bottom: 20px;
+  transition: 0.5s ease all;
+}
+.points .card p {
+  transition: 0.5s ease all;
+}
+.points .card:hover h6 {
+  color: var(--light);
+}
+.points .card:hover p {
+  color: var(--light);
 }
 .points .card .icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50px;
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .points .card .icon img {
-  width: 100%;
-  height: 100%;
+  width: 50px;
 }
 
 /* Wellness Coach */
