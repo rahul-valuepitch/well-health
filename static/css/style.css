@@ -534,35 +534,33 @@
   gap: 10px;
 }
 .programs .grid .item {
-  padding: 30px;
   text-align: center;
   box-shadow: var(--shadow);
   transition: 0.5s ease all;
   cursor: pointer;
   border-radius: 5px;
-}
-.programs .grid .item:nth-child(1),
-.programs .grid .item:nth-child(3),
-.programs .grid .item:nth-child(6),
-.programs .grid .item:nth-child(8) {
+  overflow: hidden;
+  position: relative;
   background: var(--primary);
 }
-.programs .grid .item:nth-child(2),
-.programs .grid .item:nth-child(4),
-.programs .grid .item:nth-child(5),
-.programs .grid .item:nth-child(7) {
-  background: #284e61;
+.programs .grid .item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
 }
 .programs .grid .item h6 {
   font-size: 18px;
   font-weight: 600;
-  line-height: 160%;
+  line-height: 140%;
   color: var(--light);
   text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+  margin: 10px 0;
 }
 .programs .grid .item:hover {
   transform: translateY(-10px);
-  background: #3f805e;
 }
 
 /* Footer */
@@ -757,18 +755,6 @@
   .programs .grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .programs .grid .item:nth-child(1),
-  .programs .grid .item:nth-child(3),
-  .programs .grid .item:nth-child(5),
-  .programs .grid .item:nth-child(7) {
-    background: var(--primary);
-  }
-  .programs .grid .item:nth-child(2),
-  .programs .grid .item:nth-child(4),
-  .programs .grid .item:nth-child(6),
-  .programs .grid .item:nth-child(8) {
-    background: #284e61;
-  }
 }
 @media (max-width: 992px) {
   .section {
@@ -867,18 +853,6 @@
   }
   .programs .grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .programs .grid .item:nth-child(1),
-  .programs .grid .item:nth-child(4),
-  .programs .grid .item:nth-child(5),
-  .programs .grid .item:nth-child(8) {
-    background: var(--primary);
-  }
-  .programs .grid .item:nth-child(2),
-  .programs .grid .item:nth-child(3),
-  .programs .grid .item:nth-child(6),
-  .programs .grid .item:nth-child(7) {
-    background: #284e61;
   }
   .footer .inner {
     flex-direction: column;
