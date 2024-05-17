@@ -981,9 +981,14 @@
                 Contact us today to learn more about our services and schedule a
                 free consultation with one of our Family Wellness Coaches.
               </p>
-              <a href="#" class="button">
+              <button
+                type="button"
+                class="button"
+                data-bs-toggle="modal"
+                data-bs-target="#enquiryModal"
+              >
                 <span>Book a free consultation</span>
-              </a>
+              </button>
             </div>
             <div class="map">
               <iframe
@@ -1036,6 +1041,76 @@
         </div>
       </div>
     </footer>
+
+    <!-- Enquiry Modal -->
+    <div
+      class="modal fade enquiry-modal"
+      id="enquiryModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="enquiryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fal fa-times"></i>
+            </button>
+            <h4 class="sub-heading mb-4" id="enquiryModalLabel">
+              Book a free consultation
+            </h4>
+            <form action="">
+              <div class="form-group">
+                <label>Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="name" required />
+              </div>
+              <div class="form-group">
+                <label>Email Id. <span class="text-danger">*</span></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Phone No. <span class="text-danger">*</span></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name="phone"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Select a coach <span class="text-danger">*</span></label>
+                <select name="select" class="form-select" required>
+                  <option>---</option>
+                  <option value="Coach 1">Coach 1</option>
+                  <option value="Coach 2">Coach 2</option>
+                  <option value="Coach 3">Coach 3</option>
+                  <option value="Coach 4">Coach 4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Add Notes</label>
+                <textarea name="notes" class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="button">
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

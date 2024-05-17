@@ -726,6 +726,41 @@
   width: calc(100% - 80px);
 }
 
+/* Enquiry Modal */
+.enquiry-modal .modal-body {
+  position: relative;
+  padding: 30px;
+}
+.enquiry-modal .close-btn {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 0;
+  outline: 0;
+  background: var(--primary);
+  color: var(--light);
+  border-radius: 0 10px 10px 0;
+}
+.enquiry-modal .form-group {
+  margin-bottom: 15px;
+}
+.enquiry-modal label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark);
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}
+.enquiry-modal .form-control:focus,
+.enquiry-modal .form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgb(0 150 136 / 14%);
+  border-color: var(--primary);
+}
+
 /* Responsive */
 @media (max-width: 1400px) {
 }
