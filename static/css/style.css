@@ -10,13 +10,7 @@
   padding: 20px 0;
 }
 .navbar .navbar-brand {
-  width: 150px;
-  position: absolute;
-  top: 0;
-  padding: 10px;
-  margin: 0;
-  background: var(--light);
-  border-radius: 0 0 10px 10px;
+  width: 170px;
 }
 .navbar .navbar-nav {
   gap: 30px;
@@ -607,14 +601,13 @@
   gap: 50px;
 }
 .footer .inner .logo {
-  width: 150px;
-  height: 150px;
+  width: 200px;
   background: var(--light);
   border-radius: 10px;
   padding: 20px;
 }
 .footer .inner .main {
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
 }
 .footer .main ul {
   display: flex;
@@ -766,6 +759,8 @@
     background: transparent;
     font-size: 20px;
     color: var(--primary);
+    outline: none;
+    box-shadow: none;
   }
   .navbar .social {
     justify-content: center;
@@ -843,6 +838,9 @@
     height: 30px;
     line-height: 30px;
   }
+  .wellness-coach .pattern-alt {
+    display: none;
+  }
 }
 @media (max-width: 560px) {
   .points .items {
@@ -859,12 +857,17 @@
   }
   .footer .inner .logo {
     width: 120px;
-    height: 120px;
   }
   .footer .inner .main {
     width: 100%;
   }
   .footer .main ul {
     justify-content: center;
+  }
+  .services .card {
+    flex-direction: column;
+  }
+  .services .card .card-body {
+    width: 100%;
   }
 }
