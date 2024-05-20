@@ -30,6 +30,7 @@
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg"
+      id="navbar"
       data-aos="fade-down"
       data-aos-delay="0"
     >
@@ -53,19 +54,28 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="./index.html">Home</a>
+              <a class="nav-link active" href="./index.html#philosophy">
+                The philosophy
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link" href="./index.html#family-wc ">Family WC </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./coaches.html">Coaches</a>
+              <a class="nav-link" href="./index.html#programs">Programs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./services.html">Services</a>
+              <a class="nav-link" href="./index.html#coaches">Coaches</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
+              <button
+                type="button"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#enquiryModal"
+              >
+                Contact
+              </button>
             </li>
           </ul>
           <div class="social">
@@ -83,890 +93,967 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="section hero">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6">
-            <div class="text">
-              <h1
-                class="sub-heading mb-3"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                Wellhealth Community
-              </h1>
-              <h2 class="heading mb-4" data-aos="fade-up" data-aos-delay="200">
-                Your Partner in Reversing Lifestyle Diseases and Reaching
-                Optimal Weight
-              </h2>
-              <p class="mb-5" data-aos="fade-up" data-aos-delay="400">
-                At Wellhealth Community, we understand that optimal health goes
-                far beyond just hitting the gym and eating your greens. It's a
-                personal journey that requires a deep dive into your body's
-                unique needs and a commitment to fostering a healthy weight.
-                While exercise and healthy eating are crucial, achieving optimal
-                health, especially when managing lifestyle diseases, requires a
-                more nuanced approach. The internet offers a wealth of
-                information on health and weight loss, but navigating it all can
-                be overwhelming. What works for one person might not work for
-                another. That's where Wellhealth Community comes in. Our team of
-                professionals can help you sort through the noise and create a
-                personalized plan for optimal health.
-              </p>
-              <ul>
-                <li data-aos="fade-up" data-aos-delay="600">
-                  <b>Our Vision</b>
-                  <span>Building a healthier world</span>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="800">
-                  <b>Our Mission</b>
-                  <span>
-                    Empowering 1 million people globally to achieve optimal
-                    weight and reverse lifestyle diseases by 2030.
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="image">
-              <div
-                class="owl-carousel owl-theme"
-                id="hero-carousel"
-                data-aos="zoom-in"
-                data-aos-delay="600"
-              >
-                <div class="item">
-                  <img src="./static/images/hero/01.png" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./static/images/hero/02.png" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./static/images/hero/03.png" alt="" />
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      tabindex="0"
+    >
+      <div id="philosophy">
+        <!-- Hero Section -->
+        <section class="section hero">
+          <div class="container">
+            <div class="row g-5">
+              <div class="col-lg-6">
+                <div class="text">
+                  <h1
+                    class="sub-heading mb-3"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                  >
+                    Wellhealth Community
+                  </h1>
+                  <h2
+                    class="heading mb-4"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    Your Partner in Reversing Lifestyle Diseases and Reaching
+                    Optimal Weight
+                  </h2>
+                  <p class="mb-5" data-aos="fade-up" data-aos-delay="400">
+                    At Wellhealth Community, we understand that optimal health
+                    goes far beyond just hitting the gym and eating your greens.
+                    It's a personal journey that requires a deep dive into your
+                    body's unique needs and a commitment to fostering a healthy
+                    weight. While exercise and healthy eating are crucial,
+                    achieving optimal health, especially when managing lifestyle
+                    diseases, requires a more nuanced approach. The internet
+                    offers a wealth of information on health and weight loss,
+                    but navigating it all can be overwhelming. What works for
+                    one person might not work for another. That's where
+                    Wellhealth Community comes in. Our team of professionals can
+                    help you sort through the noise and create a personalized
+                    plan for optimal health.
+                  </p>
+                  <ul>
+                    <li data-aos="fade-up" data-aos-delay="600">
+                      <b>Our Vision</b>
+                      <span>Building a healthier world</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="800">
+                      <b>Our Mission</b>
+                      <span>
+                        Empowering 1 million people globally to achieve optimal
+                        weight and reverse lifestyle diseases by 2030.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="pattern"></div>
+              <div class="col-lg-6">
+                <div class="image">
+                  <div
+                    class="owl-carousel owl-theme"
+                    id="hero-carousel"
+                    data-aos="zoom-in"
+                    data-aos-delay="600"
+                  >
+                    <div class="item">
+                      <img src="./static/images/hero/01.png" alt="" />
+                    </div>
+                    <div class="item">
+                      <img src="./static/images/hero/02.png" alt="" />
+                    </div>
+                    <div class="item">
+                      <img src="./static/images/hero/03.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="pattern"></div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Mission Vision -->
-    <section class="section mission bg-light pt-0">
-      <img
-        src="./static/images/patterns/divider-top-alt.svg"
-        alt=""
-        class="pattern"
-      />
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <p class="mb-5" data-aos="fade-up">
-              This is where Wellhealth Community can be your trusted guide. We
-              empower individuals to not just manage, but potentially reverse,
-              lifestyle diseases, all while guiding them towards a healthy
-              weight. <br />
-              Here's how we can help:
-            </p>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-xl-3 col-lg-6">
-            <div class="h-100" data-aos="fade-up" data-aos-delay="0">
-              <div class="card">
-                <div class="card-body">
-                  <div class="icon">
-                    <img src="./static/images/icons/assessment.png" alt="" />
-                  </div>
-                  <div class="text">
-                    <h5>Personalized Assessments</h5>
-                    <p>
-                      We take a comprehensive approach, starting with in-depth
-                      assessments that consider your medical history, lifestyle,
-                      and weight management goals.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="h-100" data-aos="fade-up" data-aos-delay="200">
-              <div class="card">
-                <div class="card-body">
-                  <div class="icon">
-                    <img src="./static/images/icons/management.png" alt="" />
-                  </div>
-                  <div class="text">
-                    <h5>Holistic Disease Management</h5>
-                    <p>
-                      Our coaches address the root causes of lifestyle diseases,
-                      focusing on nutrition, stress management, and healthy
-                      sleep patterns to create a customized plan for potential
-                      reversal.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="h-100" data-aos="fade-up" data-aos-delay="400">
-              <div class="card">
-                <div class="card-body">
-                  <div class="icon">
-                    <img
-                      src="./static/images/icons/weight-management.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="text">
-                    <h5>Sustainable Weight Management</h5>
-                    <p>
-                      We don't believe in quick fixes. Our focus is on
-                      developing healthy habits and personalized nutrition plans
-                      that promote lasting weight loss and a healthy weight for
-                      you.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="h-100" data-aos="fade-up" data-aos-delay="400">
-              <div class="card">
-                <div class="card-body">
-                  <div class="icon">
-                    <img src="./static/images/icons/monitoring.png" alt="" />
-                  </div>
-                  <div class="text">
-                    <h5>Daily Support and Monitoring</h5>
-                    <p>
-                      Our daily monitoring system helps you stay accountable and
-                      motivated while providing continuous coaching support.
-                      We'll be here to celebrate your milestones and guide you
-                      through challenges.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row g-4 align-items-center mt-4">
-          <div class="col-lg-6">
-            <p>
-              By working with Wellhealth Community, you gain the knowledge,
-              support, and personalized strategies you need to embark on a
-              journey towards optimal health. We'll help you achieve a healthy
-              weight and potentially reverse lifestyle diseases, all while
-              fostering a sustainable and holistic approach to well-being.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <a href="#" class="card-btn">
-              <div class="card-body">
-                <h6 class="mb-3">
-                  Ready to take charge of your health and well-being?
-                </h6>
-                <p class="text-light">
-                  Contact Wellhealth Community today and let's embark on this
-                  journey together!
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Wellness Coach -->
-    <section class="section wellness-coach bg-light-alt">
-      <div class="container">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6">
-            <div class="text">
-              <h4
-                class="sub-heading mb-2"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                Introducing Your Family's Superhero
-              </h4>
-              <h3 class="heading mb-4" data-aos="fade-up" data-aos-delay="200">
-                The Wellhealth Family Wellness Coach
-              </h3>
-              <p class="mb-5" data-aos="fade-up" data-aos-delay="400">
-                Think of a <b class="text-primary">Family Wellness Coach</b> as
-                your personal superhero for preventive health! They're more than
-                just another source of information online - they're trained
-                professionals by your side, guiding your family towards a
-                healthier, happier life.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="image" data-aos="zoom-in" data-aos-delay="200">
-              <img src="./static/images/about/coach.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-12">
-            <h4
-              class="text-center sub-heading mb-4"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              Here's why a Family Wellness Coach is different:
-            </h4>
-          </div>
-          <div class="col-md-4">
-            <div class="card" data-aos="fade-up" data-aos-delay="400">
-              <div class="card-body">
-                <h6>Unlike doctors</h6>
-                <p>
-                  who primarily focus on treating existing conditions, a Family
-                  Wellness Coach is proactive. They help you prevent health
-                  issues before they arise.
+        <!-- Mission Vision -->
+        <section class="section mission bg-light pt-0">
+          <img
+            src="./static/images/patterns/divider-top-alt.svg"
+            alt=""
+            class="pattern"
+          />
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <p class="mb-5" data-aos="fade-up">
+                  This is where Wellhealth Community can be your trusted guide.
+                  We empower individuals to not just manage, but potentially
+                  reverse, lifestyle diseases, all while guiding them towards a
+                  healthy weight. <br />
+                  Here's how we can help:
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-alt" data-aos="fade-up" data-aos-delay="600">
-              <div class="card-body">
-                <h6>Accessibility is key</h6>
-                <p>
-                  Your coach is just a message or call away, ready to answer
-                  your questions and offer daily support. You don't need
-                  appointments or wait times.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card" data-aos="fade-up" data-aos-delay="800">
-              <div class="card-body">
-                <h6>A personalized approach</h6>
-                <p>
-                  Family Wellness Coaches understand that every family is
-                  unique. They consider your family's dynamics, preferences, and
-                  goals to create a customized plan for optimal health.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./static/images/patterns/flower.png"
-        alt=""
-        class="pattern-alt"
-      />
-      <img src="./static/images/patterns/flower.png" alt="" class="pattern" />
-    </section>
-
-    <!-- Points -->
-    <section class="section points">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mx-auto">
-            <div class="text text-center">
-              <h4
-                class="heading text-light mb-3"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                Benefits of Having a Wellhealth Family Wellness Coach
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div class="items">
-          <div class="item">
-            <div class="card">
-              <div class="card-body">
-                <div class="icon">
-                  <img src="./static/images/icons/overall-health.png" alt="" />
-                </div>
-                <h6>Improved Overall Health</h6>
-                <p>
-                  Learn healthy habits for the whole family, promoting a
-                  healthier lifestyle and reducing the risk of chronic diseases.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="icon">
-                  <img src="./static/images/icons/family-bond.png" alt="" />
-                </div>
-                <h6>Stronger Family Bonds</h6>
-                <p>
-                  Work together towards shared health goals, fostering
-                  communication and creating a healthier family environment.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card active">
-              <div class="card-body">
-                <div class="icon">
-                  <img
-                    src="./static/images/icons/stress-management.png"
-                    alt=""
-                  />
-                </div>
-                <h6>Stress Management</h6>
-                <p>
-                  Learn practical tools to manage stress as a family, leading to
-                  a calmer and happier household.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <div class="card-body">
-                <div class="icon">
-                  <img src="./static/images/icons/empowerment.png" alt="" />
-                </div>
-                <h6>Empowerment</h6>
-                <p>
-                  Gain the knowledge and confidence to make informed decisions
-                  about your family's well-being.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="icon">
-                  <img src="./static/images/icons/ongoing-support.png" alt="" />
-                </div>
-                <h6>Ongoing Support</h6>
-                <p>
-                  Your coach is your cheerleader and accountability partner,
-                  motivating you to stay on track and celebrate your successes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 mx-auto">
-            <div class="text text-center">
-              <h5 class="sub-heading mb-3 text-light">
-                Imagine a future where your family thrives, brimming with health
-                and happiness. A Wellhealth Family Wellness Coach can be your
-                guide on that journey.
-              </h5>
-              <p class="text-light">
-                Contact Wellhealth Community today and unlock the potential for
-                a healthier, happier you… and your entire family!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Programs Section -->
-    <section class="section programs">
-      <div class="container">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-9">
-            <div class="grid" data-aos="zoom-in" data-aos-delay="200">
-              <div class="item">
-                <img src="./static/images/programs/01.jpg" alt="" />
-                <h6>
-                  90 Day Weight <br />
-                  loss program
-                </h6>
-              </div>
-              <div class="item">
-                <img src="./static/images/programs/02.jpg" alt="" />
-                <h6>
-                  Digestive <br />
-                  Wellness
-                </h6>
-              </div>
-              <div class="item">
-                <img src="./static/images/programs/03.jpg" alt="" />
-                <h6>
-                  Diabetes <br />
-                  Reversal
-                </h6>
-              </div>
-              <div class="item">
-                <img src="./static/images/programs/04.jpg" alt="" />
-                <h6>
-                  Thyroid <br />
-                  Reversal
-                </h6>
-              </div>
-              <div class="item">
-                <img src="./static/images/programs/05.jpg" alt="" />
-                <h6>
-                  PCOD <br />
-                  reversal
-                </h6>
-              </div>
-              <div class="item">
-                <img src="./static/images/programs/06.jpg" alt="" />
-                <h6>
-                  Knee pain <br />
-                  management
-                </h6>
-              </div>
-              <div class="item">
-                <img src="./static/images/programs/07.jpg" alt="" />
-                <h6>
-                  Healthy <br />
-                  aging
-                </h6>
-              </div>
-              <div class="item">
-                <img src="./static/images/programs/08.jpg" alt="" />
-                <h6>
-                  Kids <br />
-                  Health
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <h4 class="heading mb-3" data-aos="fade-up" data-aos-delay="0">
-              Our Programs
-            </h4>
-            <p data-aos="fade-up" data-aos-delay="200">
-              Our programs combines the power of science-backed nutrition,
-              holistic wellness practices, and personalized coaching to help you
-              achieve your health goals and improve your overall well-being.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section testimonial">
-      <div class="container">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-4">
-            <h4
-              class="sub-heading text-light mb-2"
-              data-aos="fade-up"
-              data-aos-delay="0"
-            >
-              Rave Client Testimonials Here
-            </h4>
-            <h3
-              class="heading text-light mb-5"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              Client Testimonials and Reviews
-            </h3>
-            <div
-              id="testimonial-carousel-nav"
-              class="owl-nav"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            ></div>
-          </div>
-          <div class="col-lg-8">
-            <div class="owl-carousel owl-theme" id="testimonial-carousel">
-              <!-- <div class="item">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="info">
-                      <div class="image">
+            <div class="row g-4">
+              <div class="col-xl-3 col-lg-6">
+                <div class="h-100" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon">
                         <img
-                          src="./static/images/testimonials/dummy.jpg"
+                          src="./static/images/icons/assessment.png"
                           alt=""
                         />
                       </div>
-                      <div class="profile">
-                        <h5>John Doe</h5>
-                        <h6>Graphic Designer</h6>
+                      <div class="text">
+                        <h5>Personalized Assessments</h5>
+                        <p>
+                          We take a comprehensive approach, starting with
+                          in-depth assessments that consider your medical
+                          history, lifestyle, and weight management goals.
+                        </p>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="h-100" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon">
+                        <img
+                          src="./static/images/icons/management.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text">
+                        <h5>Holistic Disease Management</h5>
+                        <p>
+                          Our coaches address the root causes of lifestyle
+                          diseases, focusing on nutrition, stress management,
+                          and healthy sleep patterns to create a customized plan
+                          for potential reversal.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="h-100" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon">
+                        <img
+                          src="./static/images/icons/weight-management.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text">
+                        <h5>Sustainable Weight Management</h5>
+                        <p>
+                          We don't believe in quick fixes. Our focus is on
+                          developing healthy habits and personalized nutrition
+                          plans that promote lasting weight loss and a healthy
+                          weight for you.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="h-100" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon">
+                        <img
+                          src="./static/images/icons/monitoring.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text">
+                        <h5>Daily Support and Monitoring</h5>
+                        <p>
+                          Our daily monitoring system helps you stay accountable
+                          and motivated while providing continuous coaching
+                          support. We'll be here to celebrate your milestones
+                          and guide you through challenges.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4 align-items-center mt-4">
+              <div class="col-lg-6">
+                <p>
+                  By working with Wellhealth Community, you gain the knowledge,
+                  support, and personalized strategies you need to embark on a
+                  journey towards optimal health. We'll help you achieve a
+                  healthy weight and potentially reverse lifestyle diseases, all
+                  while fostering a sustainable and holistic approach to
+                  well-being.
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <a href="#" class="card-btn">
+                  <div class="card-body">
+                    <h6 class="mb-3">
+                      Ready to take charge of your health and well-being?
+                    </h6>
+                    <p class="text-light">
+                      Contact Wellhealth Community today and let's embark on
+                      this journey together!
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="family-wc">
+        <!-- Wellness Coach -->
+        <section class="section wellness-coach bg-light-alt">
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                <div class="text">
+                  <h4
+                    class="sub-heading mb-2"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                  >
+                    Introducing Your Family's Superhero
+                  </h4>
+                  <h3
+                    class="heading mb-4"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    The Wellhealth Family Wellness Coach
+                  </h3>
+                  <p class="mb-5" data-aos="fade-up" data-aos-delay="400">
+                    Think of a
+                    <b class="text-primary">Family Wellness Coach</b> as your
+                    personal superhero for preventive health! They're more than
+                    just another source of information online - they're trained
+                    professionals by your side, guiding your family towards a
+                    healthier, happier life.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="image" data-aos="zoom-in" data-aos-delay="200">
+                  <img src="./static/images/about/coach.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <div class="col-lg-12">
+                <h4
+                  class="text-center sub-heading mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  Here's why a Family Wellness Coach is different:
+                </h4>
+              </div>
+              <div class="col-md-4">
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card-body">
+                    <h6>Unlike doctors</h6>
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Alias, illo veniam ipsa accusamus modi, ipsum porro
-                      eveniet nihil obcaecati, sint dignissimos qui repellat
-                      dolorem quo.
+                      who primarily focus on treating existing conditions, a
+                      Family Wellness Coach is proactive. They help you prevent
+                      health issues before they arise.
                     </p>
                   </div>
                 </div>
-              </div> -->
-              <div class="item">
-                <img src="./static/images/testimonials/01.jpg" alt="" />
               </div>
-              <div class="item">
-                <img src="./static/images/testimonials/02.jpg" alt="" />
+              <div class="col-md-4">
+                <div
+                  class="card card-alt"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <div class="card-body">
+                    <h6>Accessibility is key</h6>
+                    <p>
+                      Your coach is just a message or call away, ready to answer
+                      your questions and offer daily support. You don't need
+                      appointments or wait times.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="item">
-                <img src="./static/images/testimonials/03.jpg" alt="" />
-              </div>
-              <div class="item">
-                <img src="./static/images/testimonials/04.jpg" alt="" />
-              </div>
-              <div class="item">
-                <img src="./static/images/testimonials/05.jpg" alt="" />
-              </div>
-              <div class="item">
-                <img src="./static/images/testimonials/06.jpg" alt="" />
-              </div>
-              <div class="item">
-                <img src="./static/images/testimonials/07.jpg" alt="" />
-              </div>
-              <div class="item">
-                <img src="./static/images/testimonials/08.jpg" alt="" />
-              </div>
-              <div class="item">
-                <img src="./static/images/testimonials/09.jpg" alt="" />
-              </div>
-              <div class="item">
-                <img src="./static/images/testimonials/10.jpg" alt="" />
-              </div>
-              <div class="item">
-                <img src="./static/images/testimonials/11.jpg" alt="" />
+              <div class="col-md-4">
+                <div class="card" data-aos="fade-up" data-aos-delay="800">
+                  <div class="card-body">
+                    <h6>A personalized approach</h6>
+                    <p>
+                      Family Wellness Coaches understand that every family is
+                      unique. They consider your family's dynamics, preferences,
+                      and goals to create a customized plan for optimal health.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Services -->
-    <section class="section services">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6">
-            <div class="text">
-              <h5
-                class="sub-heading mb-3"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                Here's what sets our program apart
-              </h5>
-              <h4 class="heading mb-5" data-aos="fade-up" data-aos-delay="200">
-                Tailored Wellness Services Offered
-              </h4>
-              <div class="image" data-aos="zoom-in" data-aos-delay="400">
-                <img src="./static/images/services/services.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card" data-aos="fade-up" data-aos-delay="0">
-              <div class="icon">
-                <img
-                  src="./static/images/icons/science-based-diet.png"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h6>Science-Based Diet</h6>
-                <p>
-                  We create a customized meal plan that considers your
-                  nutritional needs, calorie needs, preferences, and health
-                  conditions.
-                </p>
-              </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon">
-                <img
-                  src="./static/images/icons/holistic-wellbeing.png"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h6>Holistic Wellbeing Focus</h6>
-                <p>
-                  Our program goes beyond diet. We address sleep, stress
-                  management, and other lifestyle factors that impact your
-                  health.
-                </p>
-              </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon">
-                <img
-                  src="./static/images/icons/expert-exercise-guidance.png"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h6>Expert Exercise Guidance</h6>
-                <p>
-                  Our certified support you with safe and required exercise plan
-                  that fits you.
-                </p>
-              </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="600">
-              <div class="icon">
-                <img
-                  src="./static/images/icons/food-plate-mentoring.png"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h6>Daily Food Plate Mentoring</h6>
-                <p>
-                  Receive daily guidance on portion control, food choices, and
-                  meal planning with our registered dietitians.
-                </p>
-              </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="600">
-              <div class="icon">
-                <img src="./static/images/icons/circadian.png" alt="" />
-              </div>
-              <div class="card-body">
-                <h6>Circadian Rhythm Optimization</h6>
-                <p>
-                  We help you establish healthy sleep patterns, which is crucial
-                  for regulating metabolism and weight management.
-                </p>
-              </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="600">
-              <div class="icon">
-                <img
-                  src="./static/images/icons/family-wellness-coaching.png"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h6>Personalized Family Wellness Coaching</h6>
-                <p>
-                  Our supportive coaches provide ongoing motivation,
-                  accountability, and personalized guidance throughout your
-                  journey.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <img
+            src="./static/images/patterns/flower.png"
+            alt=""
+            class="pattern-alt"
+          />
+          <img
+            src="./static/images/patterns/flower.png"
+            alt=""
+            class="pattern"
+          />
+        </section>
 
-      <img
-        src="./static/images/patterns/flower.png"
-        alt=""
-        class="pattern-alt"
-      />
-      <img src="./static/images/patterns/flower.png" alt="" class="pattern" />
-    </section>
-
-    <!-- Coach -->
-    <section class="section coach p-0">
-      <img
-        src="./static/images/patterns/divider-top.svg"
-        alt=""
-        class="pattern"
-      />
-
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-8 mx-auto">
-            <h5
-              class="sub-heading text-light text-center mb-2"
-              data-aos="fade-up"
-              data-aos-delay="0"
-            >
-              Our Coaches
-            </h5>
-            <h4
-              class="heading mb-3 text-center text-light"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              Guiding Growth Through Coaching
-            </h4>
-            <p
-              class="text-center text-light"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              Our team consists of highly trained and experienced wellness
-              coaches who are passionate about helping you reach your full
-              potential. They'll provide you with personalized guidance,
-              encouragement, and expert knowledge to create a wellness plan that
-              fits your unique needs and lifestyle.
-            </p>
-          </div>
-        </div>
-
-        <div class="owl-carousel owl-theme" id="coach-carousel">
-          <div class="item">
-            <div class="card">
-              <div class="image">
-                <img src="./static/images/coach/dummy.jpg" alt="" />
+        <!-- Points -->
+        <section class="section points">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mx-auto">
+                <div class="text text-center">
+                  <h4
+                    class="heading text-light mb-3"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                  >
+                    Benefits of Having a Wellhealth Family Wellness Coach
+                  </h4>
+                </div>
               </div>
-              <div class="card-body">
-                <h6>John Doe</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+            </div>
+            <div class="items">
+              <div class="item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="icon">
+                      <img
+                        src="./static/images/icons/overall-health.png"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Improved Overall Health</h6>
+                    <p>
+                      Learn healthy habits for the whole family, promoting a
+                      healthier lifestyle and reducing the risk of chronic
+                      diseases.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="icon">
+                      <img src="./static/images/icons/family-bond.png" alt="" />
+                    </div>
+                    <h6>Stronger Family Bonds</h6>
+                    <p>
+                      Work together towards shared health goals, fostering
+                      communication and creating a healthier family environment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card active">
+                  <div class="card-body">
+                    <div class="icon">
+                      <img
+                        src="./static/images/icons/stress-management.png"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Stress Management</h6>
+                    <p>
+                      Learn practical tools to manage stress as a family,
+                      leading to a calmer and happier household.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="icon">
+                      <img src="./static/images/icons/empowerment.png" alt="" />
+                    </div>
+                    <h6>Empowerment</h6>
+                    <p>
+                      Gain the knowledge and confidence to make informed
+                      decisions about your family's well-being.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="icon">
+                      <img
+                        src="./static/images/icons/ongoing-support.png"
+                        alt=""
+                      />
+                    </div>
+                    <h6>Ongoing Support</h6>
+                    <p>
+                      Your coach is your cheerleader and accountability partner,
+                      motivating you to stay on track and celebrate your
+                      successes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mx-auto">
+                <div class="text text-center">
+                  <h5 class="sub-heading mb-3 text-light">
+                    Imagine a future where your family thrives, brimming with
+                    health and happiness. A Wellhealth Family Wellness Coach can
+                    be your guide on that journey.
+                  </h5>
+                  <p class="text-light">
+                    Contact Wellhealth Community today and unlock the potential
+                    for a healthier, happier you… and your entire family!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="card">
-              <div class="image">
-                <img src="./static/images/coach/dummy.jpg" alt="" />
-              </div>
-              <div class="card-body">
-                <h6>John Doe</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <div class="image">
-                <img src="./static/images/coach/dummy.jpg" alt="" />
-              </div>
-              <div class="card-body">
-                <h6>John Doe</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <div class="image">
-                <img src="./static/images/coach/dummy.jpg" alt="" />
-              </div>
-              <div class="card-body">
-                <h6>John Doe</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <div class="image">
-                <img src="./static/images/coach/dummy.jpg" alt="" />
-              </div>
-              <div class="card-body">
-                <h6>John Doe</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <div class="image">
-                <img src="./static/images/coach/dummy.jpg" alt="" />
-              </div>
-              <div class="card-body">
-                <h6>John Doe</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
 
-      <img
-        src="./static/images/patterns/divider-bottom.svg"
-        alt=""
-        class="pattern mt-5"
-      />
-    </section>
+      <div id="programs">
+        <!-- Programs Section -->
+        <section class="section programs">
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-9">
+                <div class="grid" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="item">
+                    <img src="./static/images/programs/01.jpg" alt="" />
+                    <h6>
+                      90 Day Weight <br />
+                      loss program
+                    </h6>
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/programs/02.jpg" alt="" />
+                    <h6>
+                      Digestive <br />
+                      Wellness
+                    </h6>
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/programs/03.jpg" alt="" />
+                    <h6>
+                      Diabetes <br />
+                      Reversal
+                    </h6>
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/programs/04.jpg" alt="" />
+                    <h6>
+                      Thyroid <br />
+                      Reversal
+                    </h6>
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/programs/05.jpg" alt="" />
+                    <h6>
+                      PCOD <br />
+                      reversal
+                    </h6>
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/programs/06.jpg" alt="" />
+                    <h6>
+                      Knee pain <br />
+                      management
+                    </h6>
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/programs/07.jpg" alt="" />
+                    <h6>
+                      Healthy <br />
+                      aging
+                    </h6>
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/programs/08.jpg" alt="" />
+                    <h6>
+                      Kids <br />
+                      Health
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <h4 class="heading mb-3" data-aos="fade-up" data-aos-delay="0">
+                  Our Programs
+                </h4>
+                <p data-aos="fade-up" data-aos-delay="200">
+                  Our programs combines the power of science-backed nutrition,
+                  holistic wellness practices, and personalized coaching to help
+                  you achieve your health goals and improve your overall
+                  well-being.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <!-- About Us -->
-    <section class="section about pt-0">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6">
-            <div class="image" data-aos="zoom-in" data-aos-delay="0">
-              <img src="./static/images/about/about.jpg" alt="" />
+        <!-- Testimonials Section -->
+        <section class="section testimonial">
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-4">
+                <h4
+                  class="sub-heading text-light mb-2"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                >
+                  Rave Client Testimonials Here
+                </h4>
+                <h3
+                  class="heading text-light mb-5"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  Client Testimonials and Reviews
+                </h3>
+                <div
+                  id="testimonial-carousel-nav"
+                  class="owl-nav"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                ></div>
+              </div>
+              <div class="col-lg-8">
+                <div class="owl-carousel owl-theme" id="testimonial-carousel">
+                  <!-- <div class="item">
+              <div class="card">
+                <div class="card-body">
+                  <div class="info">
+                    <div class="image">
+                      <img
+                        src="./static/images/testimonials/dummy.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="profile">
+                      <h5>John Doe</h5>
+                      <h6>Graphic Designer</h6>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Alias, illo veniam ipsa accusamus modi, ipsum porro
+                    eveniet nihil obcaecati, sint dignissimos qui repellat
+                    dolorem quo.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+                  <div class="item">
+                    <img src="./static/images/testimonials/01.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/02.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/03.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/04.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/05.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/06.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/07.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/08.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/09.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/10.jpg" alt="" />
+                  </div>
+                  <div class="item">
+                    <img src="./static/images/testimonials/11.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="text">
-              <h5
-                class="sub-heading mb-2"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                Introducing Your Family's Superhero
-              </h5>
-              <h4 class="heading mb-4" data-aos="fade-up" data-aos-delay="200">
-                The Wellhealth Family Wellness Coach
-              </h4>
-              <p class="mb-4" data-aos="fade-up" data-aos-delay="400">
-                Think of a Family Wellness Coach as your personal superhero for
-                preventive health! They're more than just another source of
-                information online - they're trained professionals by your side,
-                guiding your family towards a healthier, happier life.
-              </p>
-              <h5 class="sub-heading mb-3">
-                Here's why a Family Wellness Coach is different
-              </h5>
-              <ul>
-                <li>
-                  <b>Unlike doctors</b>
-                  <span>
-                    who primarily focus on treating existing conditions, a
-                    Family Wellness Coach is proactive. They help you prevent
-                    health issues before they arise.
-                  </span>
-                </li>
-                <li>
-                  <b>Accessibility is key</b>
-                  <span>
-                    Your coach is just a message or call away, ready to answer
-                    your questions and offer daily support. You don't need
-                    appointments or wait times.
-                  </span>
-                </li>
-                <li>
-                  <b>A personalized approach</b>
-                  <span>
-                    Family Wellness Coaches understand that every family is
-                    unique. They consider your family's dynamics, preferences,
-                    and goals to create a customized plan for optimal health.
-                  </span>
-                </li>
-              </ul>
+        </section>
+
+        <!-- Services -->
+        <section class="section services">
+          <div class="container">
+            <div class="row g-5">
+              <div class="col-lg-6">
+                <div class="text">
+                  <h5
+                    class="sub-heading mb-3"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                  >
+                    Here's what sets our program apart
+                  </h5>
+                  <h4
+                    class="heading mb-5"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    Tailored Wellness Services Offered
+                  </h4>
+                  <div class="image" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="./static/images/services/services.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card" data-aos="fade-up" data-aos-delay="0">
+                  <div class="icon">
+                    <img
+                      src="./static/images/icons/science-based-diet.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6>Science-Based Diet</h6>
+                    <p>
+                      We create a customized meal plan that considers your
+                      nutritional needs, calorie needs, preferences, and health
+                      conditions.
+                    </p>
+                  </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon">
+                    <img
+                      src="./static/images/icons/holistic-wellbeing.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6>Holistic Wellbeing Focus</h6>
+                    <p>
+                      Our program goes beyond diet. We address sleep, stress
+                      management, and other lifestyle factors that impact your
+                      health.
+                    </p>
+                  </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                  <div class="icon">
+                    <img
+                      src="./static/images/icons/expert-exercise-guidance.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6>Expert Exercise Guidance</h6>
+                    <p>
+                      Our certified support you with safe and required exercise
+                      plan that fits you.
+                    </p>
+                  </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                  <div class="icon">
+                    <img
+                      src="./static/images/icons/food-plate-mentoring.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6>Daily Food Plate Mentoring</h6>
+                    <p>
+                      Receive daily guidance on portion control, food choices,
+                      and meal planning with our registered dietitians.
+                    </p>
+                  </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                  <div class="icon">
+                    <img src="./static/images/icons/circadian.png" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <h6>Circadian Rhythm Optimization</h6>
+                    <p>
+                      We help you establish healthy sleep patterns, which is
+                      crucial for regulating metabolism and weight management.
+                    </p>
+                  </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                  <div class="icon">
+                    <img
+                      src="./static/images/icons/family-wellness-coaching.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6>Personalized Family Wellness Coaching</h6>
+                    <p>
+                      Our supportive coaches provide ongoing motivation,
+                      accountability, and personalized guidance throughout your
+                      journey.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+
+          <img
+            src="./static/images/patterns/flower.png"
+            alt=""
+            class="pattern-alt"
+          />
+          <img
+            src="./static/images/patterns/flower.png"
+            alt=""
+            class="pattern"
+          />
+        </section>
       </div>
-      <img src="./static/images/patterns/flower.png" alt="" class="pattern" />
-    </section>
+
+      <div id="coaches">
+        <!-- Coach -->
+        <section class="section coach p-0">
+          <img
+            src="./static/images/patterns/divider-top.svg"
+            alt=""
+            class="pattern"
+          />
+
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-lg-8 mx-auto">
+                <h5
+                  class="sub-heading text-light text-center mb-2"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                >
+                  Our Coaches
+                </h5>
+                <h4
+                  class="heading mb-3 text-center text-light"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  Guiding Growth Through Coaching
+                </h4>
+                <p
+                  class="text-center text-light"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  Our team consists of highly trained and experienced wellness
+                  coaches who are passionate about helping you reach your full
+                  potential. They'll provide you with personalized guidance,
+                  encouragement, and expert knowledge to create a wellness plan
+                  that fits your unique needs and lifestyle.
+                </p>
+              </div>
+            </div>
+
+            <div class="owl-carousel owl-theme" id="coach-carousel">
+              <div class="item">
+                <div class="card">
+                  <div class="image">
+                    <img src="./static/images/coach/dummy.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <h6>John Doe</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="image">
+                    <img src="./static/images/coach/dummy.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <h6>John Doe</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="image">
+                    <img src="./static/images/coach/dummy.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <h6>John Doe</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="image">
+                    <img src="./static/images/coach/dummy.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <h6>John Doe</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="image">
+                    <img src="./static/images/coach/dummy.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <h6>John Doe</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="image">
+                    <img src="./static/images/coach/dummy.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <h6>John Doe</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./static/images/patterns/divider-bottom.svg"
+            alt=""
+            class="pattern mt-5"
+          />
+        </section>
+
+        <!-- About Us -->
+        <section class="section about pt-0">
+          <div class="container">
+            <div class="row g-5">
+              <div class="col-lg-6">
+                <div class="image" data-aos="zoom-in" data-aos-delay="0">
+                  <img src="./static/images/about/about.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="text">
+                  <h5
+                    class="sub-heading mb-2"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                  >
+                    Introducing Your Family's Superhero
+                  </h5>
+                  <h4
+                    class="heading mb-4"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    The Wellhealth Family Wellness Coach
+                  </h4>
+                  <p class="mb-4" data-aos="fade-up" data-aos-delay="400">
+                    Think of a Family Wellness Coach as your personal superhero
+                    for preventive health! They're more than just another source
+                    of information online - they're trained professionals by
+                    your side, guiding your family towards a healthier, happier
+                    life.
+                  </p>
+                  <h5 class="sub-heading mb-3">
+                    Here's why a Family Wellness Coach is different
+                  </h5>
+                  <ul>
+                    <li>
+                      <b>Unlike doctors</b>
+                      <span>
+                        who primarily focus on treating existing conditions, a
+                        Family Wellness Coach is proactive. They help you
+                        prevent health issues before they arise.
+                      </span>
+                    </li>
+                    <li>
+                      <b>Accessibility is key</b>
+                      <span>
+                        Your coach is just a message or call away, ready to
+                        answer your questions and offer daily support. You don't
+                        need appointments or wait times.
+                      </span>
+                    </li>
+                    <li>
+                      <b>A personalized approach</b>
+                      <span>
+                        Family Wellness Coaches understand that every family is
+                        unique. They consider your family's dynamics,
+                        preferences, and goals to create a customized plan for
+                        optimal health.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./static/images/patterns/flower.png"
+            alt=""
+            class="pattern"
+          />
+        </section>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="section footer pt-0 pb-5">
@@ -1007,16 +1094,16 @@
           <div class="main">
             <ul>
               <li>
-                <a href="./about.html">About Us</a>
+                <a href="#">The philosophy</a>
               </li>
               <li>
-                <a href="./coaches.html">Coaches</a>
+                <a href="#">Family WC</a>
               </li>
               <li>
-                <a href="./services.html">Services</a>
+                <a href="#">Coaches</a>
               </li>
               <li>
-                <a href="./contact.html">Contact Us</a>
+                <a href="#">Programs</a>
               </li>
             </ul>
             <hr />
