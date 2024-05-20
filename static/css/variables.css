@@ -87,6 +87,7 @@ p {
   color: var(--dark-alt);
   line-height: 160%;
   letter-spacing: 0.5px;
+  text-align: justify;
 }
 p a {
   color: var(--primary);
