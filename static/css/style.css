@@ -815,6 +815,9 @@
     height: 75%;
     border-radius: 0 0 50px 50px;
   }
+  .hero .hero-row {
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 850px) {
 }
