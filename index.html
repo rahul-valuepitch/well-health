@@ -122,7 +122,7 @@
                     Your Partner in Reversing Lifestyle Diseases and Reaching
                     Optimal Weight
                   </h2>
-                  <p class="mb-5" data-aos="fade-up" data-aos-delay="400">
+                  <p class="hide mb-2" data-aos="fade-up" data-aos-delay="400">
                     At Wellhealth Community, we understand that optimal health
                     goes far beyond just hitting the gym and eating your greens.
                     It's a personal journey that requires a deep dive into your
@@ -137,6 +137,12 @@
                     help you sort through the noise and create a personalized
                     plan for optimal health.
                   </p>
+                  <span
+                    class="text-toggle mb-4"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    >Read More</span
+                  >
                   <ul>
                     <li data-aos="fade-up" data-aos-delay="600">
                       <b>Our Vision</b>
@@ -622,55 +628,30 @@
         <!-- Testimonials Section -->
         <section class="section testimonial">
           <div class="container">
-            <div class="row g-5 align-items-center">
-              <div class="col-lg-4">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
                 <h4
-                  class="sub-heading text-light mb-2"
+                  class="sub-heading text-center text-light mb-2"
                   data-aos="fade-up"
                   data-aos-delay="0"
                 >
-                  Rave Client Testimonials Here
+                  Client Testimonials
                 </h4>
                 <h3
-                  class="heading text-light mb-5"
+                  class="heading text-center text-light mb-5"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  Client Testimonials and Reviews
+                  Our Results
                 </h3>
+              </div>
+              <div class="col-lg-12">
                 <div
-                  id="testimonial-carousel-nav"
-                  class="owl-nav"
+                  class="owl-carousel owl-theme"
+                  id="testimonial-carousel"
                   data-aos="fade-up"
                   data-aos-delay="400"
-                ></div>
-              </div>
-              <div class="col-lg-8">
-                <div class="owl-carousel owl-theme" id="testimonial-carousel">
-                  <!-- <div class="item">
-              <div class="card">
-                <div class="card-body">
-                  <div class="info">
-                    <div class="image">
-                      <img
-                        src="./static/images/testimonials/dummy.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="profile">
-                      <h5>John Doe</h5>
-                      <h6>Graphic Designer</h6>
-                    </div>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Alias, illo veniam ipsa accusamus modi, ipsum porro
-                    eveniet nihil obcaecati, sint dignissimos qui repellat
-                    dolorem quo.
-                  </p>
-                </div>
-              </div>
-            </div> -->
+                >
                   <div class="item">
                     <img src="./static/images/testimonials/01.jpg" alt="" />
                   </div>
@@ -705,6 +686,12 @@
                     <img src="./static/images/testimonials/11.jpg" alt="" />
                   </div>
                 </div>
+                <div
+                  id="testimonial-carousel-nav"
+                  class="owl-nav"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                ></div>
               </div>
             </div>
           </div>
@@ -1338,7 +1325,7 @@
       // Testimonial Carousel
       $("#testimonial-carousel").owlCarousel({
         loop: true,
-        margin: 30,
+        margin: 15,
         nav: true,
         navContainer: "#testimonial-carousel-nav",
         navText: [
@@ -1357,7 +1344,7 @@
             items: 2,
           },
           1000: {
-            items: 2,
+            items: 3,
           },
         },
       });
@@ -1375,6 +1362,8 @@
         const anim = bodymovin.loadAnimation(animationData);
       };
       heroAnimation();
+
+      heroTextToggle();
     </script>
   </body>
 </html>

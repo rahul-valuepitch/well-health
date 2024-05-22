@@ -13,6 +13,24 @@ const copyright = () => {
 };
 copyright();
 
+// Hero Text Toggle
+const heroTextToggle = () => {
+  const toggle = document.querySelector(".hero .text-toggle");
+  const text = document.querySelector(".hero p");
+
+  toggle.addEventListener("click", () => {
+    if (text.classList.contains("hide")) {
+      text.classList.remove("hide");
+      text.classList.add("show");
+      toggle.textContent = "Show Less";
+    } else {
+      text.classList.add("hide");
+      text.classList.remove("show");
+      toggle.textContent = "Read More";
+    }
+  });
+};
+
 // Mission
 const missionToggle = () => {
   const cards = document.querySelectorAll(".mission .card");

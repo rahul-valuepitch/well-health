@@ -109,6 +109,30 @@
   line-height: 160%;
   color: var(--dark-alt);
 }
+.hero .text p {
+  transition: 0.5s ease all;
+}
+.hero .text p.hide {
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.hero .text p.show {
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: initial;
+  -webkit-line-clamp: initial;
+  -webkit-box-orient: vertical;
+}
+.hero .text .text-toggle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary);
+  display: inline-block;
+  cursor: pointer;
+}
 
 /* Mission Vision Section */
 .mission .card {
@@ -714,7 +738,7 @@
 .testimonial .owl-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
@@ -781,6 +805,12 @@
 
 /* Responsive */
 @media (max-width: 1400px) {
+  .heading {
+    font-size: 35px;
+  }
+  .sub-heading {
+    font-size: 23px;
+  }
 }
 @media (max-width: 1300px) {
 }
