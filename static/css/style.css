@@ -698,15 +698,8 @@
 }
 
 /* Testimonial Section */
-.testimonial::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 100%;
+.testimonial {
   background: linear-gradient(to right bottom, var(--primary), #3f805e);
-  border-radius: 0 50px 50px 0;
 }
 .testimonial .card {
   border: 0;
