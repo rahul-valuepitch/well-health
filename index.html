@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="./static/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./static/css/style.css" />
+
+    <!-- SITE KEY & ReCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ld__ugpAAAAALredw1svwM33uVkVa2isqtC6QGa"></script>
   </head>
 
   <body>
@@ -1230,7 +1233,7 @@
             <h4 class="sub-heading mb-4" id="enquiryModalLabel">
               Book a free consultation
             </h4>
-            <form action="">
+            <form action="./contact-form-handler.php" method="POST">
               <div class="form-group">
                 <label>Full Name <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" name="name" required />
@@ -1255,7 +1258,7 @@
               </div>
               <div class="form-group">
                 <label>Select a coach <span class="text-danger">*</span></label>
-                <select name="select" class="form-select" required>
+                <select name="coach" class="form-select" required>
                   <option>---</option>
                   <option value="Parimala Harikumar">Parimala Harikumar</option>
                   <option value="Padma Maanthini">Padma Maanthini</option>
@@ -1278,6 +1281,25 @@
                 <label>Add Notes</label>
                 <textarea name="notes" class="form-control" rows="3"></textarea>
               </div>
+              <input
+                type="hidden"
+                name="recaptcha_response"
+                id="recaptchaResponse"
+              />
+              <script>
+                // SITE KEY
+                grecaptcha.ready(function () {
+                  grecaptcha
+                    .execute("6Ld__ugpAAAAALredw1svwM33uVkVa2isqtC6QGa", {
+                      action: "contact",
+                    })
+                    .then(function (token) {
+                      var recaptchaResponse =
+                        document.getElementById("recaptchaResponse");
+                      recaptchaResponse.value = token;
+                    });
+                });
+              </script>
               <button type="submit" class="button">
                 <span>Send Message</span>
               </button>

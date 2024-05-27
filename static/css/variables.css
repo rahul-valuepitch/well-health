@@ -215,3 +215,9 @@ input[type="number"] {
 }
 
 /* List */
+
+/* Recaptcha */
+.grecaptcha-badge {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
